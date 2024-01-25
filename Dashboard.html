@@ -1,0 +1,257 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellaz</title>
+	<Link rel="stylesheet" href="dashboard.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+    <body>
+	  <div class="container">
+	    <div class="menu meno">
+		  <img class="logo" src="./images/logo.png" alt="">
+		  <div class="sidebar">
+		  <ul>
+		    <li>
+			<a href="">
+			 <div class="pan">
+			 <div class="sidenav">
+			   <img src="./images/home.png" alt="">
+			   <span>Home</span>
+			 </div>
+			 </div>
+			 </a>
+			</li>
+			<li>
+			 <div class="pan">
+			 <div class="sidenav" onclick="order()">
+			   <img src="./images/orders.png" alt="">
+			   <span>Orders</span>
+			   <div class="navhover">
+			   <img src="./images/vee.png" alt="">
+			   </div>
+			 </div>		 
+			 </div>
+			 <div id="order" class="menuopt">
+			   <a href="" class="sidebar-opt">option1</a>
+			   <a href="" class="sidebar-opt">option2</a>
+			   <a href="" class="sidebar-opt">option3</a>
+			 </div>
+			</li>
+			<li>
+			<a href="">
+			 <div class="pan">
+			 <div class="sidenav">
+			   <img src="./images/sub.png" alt="">
+			   <span>Subscriptions</span>
+			 </div>
+			 </div>
+			 </a>
+			</li>
+			<li>
+			 <div class="pan">
+			 <div class="sidenav">
+			   <img src="./images/customers.png" alt="">
+			   <span>Customers</span>
+			 </div>
+			 </div>
+			</li>
+			<li>
+			 <div class="pan">
+			 <div class="sidenav" onclick="product()">
+			   <img src="./images/products.png" alt="">
+			   <span>Products</span>
+			   <div class="navhover">
+			   <img src="./images/vee.png" alt="">
+			   </div>
+			 </div>
+			 </div>
+			 <div id="product" class="menuopt">
+			   <a href="" class="sidebar-opt">All products</a>
+			   <a href="" class="sidebar-opt">Categories</a>
+			   <a href="" class="sidebar-opt">Attributes</a>
+			   <a href="" class="sidebar-opt">Gift cards</a>
+			   <a href="" class="sidebar-opt">Purchase links</a>
+			 </div>
+			</li>
+			<li>
+			 <div class="pan">
+			 <div class="sidenav "onclick="discount()">
+			   <img src="./images/discount.png" alt="">
+			   <span>Discount</span>
+			   <div class="navhover">
+			   <img src="./images/vee.png" alt="">
+			   </div>
+			 </div>
+			 </div>
+			 <div id="discount" class="menuopt">
+			   <a href="" class="sidebar-opt">option1</a>
+			   <a href="" class="sidebar-opt">option2</a>
+			   <a href="" class="sidebar-opt">option3</a>
+			 </div>
+			</li>
+			<li>
+			<a href="">
+			 <div class="pan">
+			 <div class="sidenav">
+			   <img src="./images/reporting.png" alt="">
+			   <span>Reporting</span>
+			 </div>
+			 </div>
+			 </a>
+			</li>
+		  </ul>
+		  <div class="sidenav pro"onclick="()">
+			   <img src="./images/headd.png" alt="">
+			   <span>Oluwafemi</span>
+			   <div class="navhover">
+			   <img src="./images/vee.png" alt="">
+			   </div>
+			 </div>
+			 </div>
+			 <div id="discount" class="menuopt">
+			   <a href="" class="sidebar-opt">option2</a>
+			   <a href="" class="sidebar-opt">option3</a>
+			 </div>
+		</div>
+		<div class="main">
+		 <div class="touch">
+		  <div class="togg">
+		    <img id="open" class="openn" onclick="opene()" src="./images/menu.png" alt="">
+		  </div>
+		  <div id="tgle" class="gle">
+		    <img id="close" class="glear" onclick="closer()" src="./images/close.png" alt="">
+		    <ul>
+			  <li class="tglelist"><a href="#">Home</a></li>			 
+			  <hr>
+			  <div class="elist promm" >
+			  <li class="tglelist" onclick="ordd()">Orders</li>
+			  <img class="navhover" src="./images/vee.png" alt="">
+			  </div>
+			  <hr>
+			  <li class="tglelist prom"><a href="#">Order1</a></li>
+			  <li class="tglelist prom"><a href="#">Orders2</a></li>
+			  
+			  <hr>
+			  <li class="tglelist"><a href="#">Subscriptions</a></li>
+			  <hr>
+			  <li class="tglelist"><a href="#">customers</a></li>
+			  <hr >
+			  <div class="elist promm">
+			  <li class="tglelist" onclick="prod()">Product</li>
+			  <img class="navhover" src="./images/vee.png" alt="">
+			  </div>
+			  <hr >
+			  <li class="tglelist prom "><a href="#">All products</a></li>
+			  
+			  <li class="tglelist prom "><a href="#">Categories</a></li>
+			  
+			  <li class="tglelist prom "><a href="#">Attributes</a></li>
+			  
+			  <li class="tglelist prom "><a href="#">Gift cards</a></li>
+			  
+			  <li class="tglelist prom "><a href="#">Purchase links</a></li>
+			  <hr>
+			  <div class="elist promm" >
+			  <li class="tglelist" onclick="discc()">Discount</li>
+			  <img class="navhover" src="./images/vee.png" alt="">
+			  </div>
+			  
+			  <hr>
+			  <li class="tglelist prom"><a href="#">Discount1</a></li>
+			  <li class="tglelist prom"><a href="#">Discount2</a></li>
+			  <hr>
+			  <li class="tglelist"><a href="#">Reporting</a></li>
+			</ul>
+		  </div>
+		  <div id="tle" class="headof">
+		    <img src="./images/headd.png">
+            <span class="hed">Oluwafemi</span>			
+		  </div>
+		 </div>
+		 
+		  <div class="maincont">
+		  <button class="bak">Back</button>
+		    <div class="macont">
+		    <p>New Product</p>
+			<button class="sapro">Save Products</button>
+		    </div>
+		    <div class="inp">
+		      <div class="inp1">
+			   <label for="pro-name">Product name</label><br>
+			   <input type="text" id="pro-name" >
+		      </div>
+			  <div class="inp2">
+			   <label for="pro-name">Product name</label><br>
+			   <input type="text" id="pro-name" placeholder="optional">
+		      </div>
+		    </div>
+			<p class="typeo">Type</p>
+		    <div class="items">
+		      <div class="item">
+		        <div class="itsp">
+			    <img src="./images/products.png">
+				<span class="san">Physical</span>
+				</div>
+				<p> item has weight and needs shipping<br>
+				or customer pickup</p>
+		      </div>
+			  <div class="item">
+		        <div class="itsp">
+			    <img src="./images/digit.png">
+				<span class="san">Digital</span>
+				</div>
+				<p> item deliverded digitaly or provided<br>
+				as a service</p>
+		      </div>
+			 <div class="item">
+		        <div class="itsp">
+			    <img src="./images/bundle.png">
+				<span class="san">Bundle</span>
+				</div>
+				<p> item are grouped into several physical <br>
+				or digital products</p>
+		      </div>
+			  <div class="item">
+		        <div class="itsp">
+			    <img src="./images/gift-card.png">
+				<span class="san">Gift card</span>
+				</div>
+				<p> Generate a unique code for store credit <br>
+				when purchased</p>
+		      </div>
+		    
+		    </div>
+			<p class="typee">Type</p>
+			<div class="uplimg">
+			<img src="./images/imagee.png" alt="">
+			<h3>Add image</h3>
+			<p>Drag & drop upload</p>
+		    </div>
+			<p>Categories</p>
+			<div class="catin">
+			<input type="img">
+			
+		    </div>
+			
+		  </div>
+		  
+	    
+		
+		</div>
+		
+	    
+		
+	  
+	  </div>
+	
+	
+	</body>
+	<script src="./dashboard.js"></script>
+
+
+
+
+
+
+
+</html>
